@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Nike Shopping Cart</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/f6edae8f4a.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="cart.css">
+
+    
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-dark fixed-top" style="background-color: black;">
+            <div class="container-fluid">
+                <img src="https://i.pinimg.com/originals/69/d5/d5/69d5d5c5f96baa87d25effd4e9f57dc2.jpg" alt=""
+                    width="80" height="50" class="d-inline-block align-text-top">
+                <a class="navbar-brand" href="#">NIKE FACTORY STORE</a>
+                <button type="button" class="cartbtn d-block d-md-none" data-toggle="modal" data-target="#myModal" style="background: black; border: none; color: white;">
+                    <i class="fas fa-shopping-cart"></i>
+                  </button>
+            </div>
+        </nav>
+    </div>
+    <div class="container-fluid">
+    <div class="row ">
+        <div class="col-md-9 mt-5" id="maingrid">
+            <div class="row mt-3">
+                <div class="col" id="product1" >
+                    <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4d87680e-a278-47e8-b0d4-d6e76f924c4d/blazer-low-77-prm-shoe-pnHzBj.png"
+                        class="card-img-top" alt="...">
+                    <div class="card-body" >
+                        <h5 class="card-title">Nike Blazer Low '77 PRM</h5>
+                        <p class="card-text"><span class="cost">₹8295</span><br>
+                            incl. of taxes and duties</p>
+                        <a href="#" class="btn  add-cart">ADD TO CART</a>
+                        <a href="#" class="btn added d-none">ADDED</a>
+                    </div>
+                </div>
+                <div class="col" id="product2" >
+                    <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e706a692-be9e-4d5a-9537-3d64bd2d0e34/blazer-mid-77-shoe-9SvVxB.png"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Nike Blazer Mid '77
+                        </h5>
+                        <p class="card-text"><span class="cost">₹9295</span><br>
+                            incl. of taxes and duties</p>
+                        <a href="#" class="btn add-cart">ADD TO CART</a>
+                        <a href="#" class="btn added d-none">ADDED</a>
+                    </div>
+                </div>
+                <div class="col" id="product3" >
+                    <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/fe80aa15-e6c2-494b-9606-9d291d7aff95/jordan-air-nfh-shoe-1msFvZ.png"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Jordan Air NFH</h5>
+                        <p class="card-text"><span class="cost">₹9295</span><br>
+                            incl. of taxes and duties</p>
+                        <a href="#" class="btn add-cart">ADD TO CART</a>
+                        <a href="#" class="btn added d-none">ADDED</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col"  id="product4">
+                    <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/253e04a1-934b-42bc-95c7-21e4c09bc5de/kyrie-flytrap-4-ep-basketball-shoe-qzg21C.png"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Kyrie Flytrap 4 EP</h5>
+                        <p class="card-text"><span class="cost">₹8125</span><br>
+                            incl. of taxes and duties</p>
+                        <a href="#" class="btn add-cart">ADD TO CART</a>
+                        <a href="#" class="btn added d-none">ADDED</a>
+                    </div>
+                </div>
+                <div class="col" id="product5">
+                    <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/668d30af-b513-4a6f-b2e0-8eb89626166b/air-vapormax-2021-fk-shoe-dTnvq3.png"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Nike Air VaporMax</h5>
+                        <p class="card-text"><span class="cost">₹17595</span><br>
+                            incl. of taxes and duties</p>
+                        <a href="#" class="btn add-cart">ADD TO CART</a>
+                        <a href="#" class="btn added d-none">ADDED</a>
+                    </div>
+                </div>
+                <div class="col " id="product6">
+                    <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/9313fb42-b9fb-4a13-bd94-46137fd19c12/air-jordan-1-mid-se-shoe-zgPD6z.png"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Flash Lime</h5>
+                        <p class="card-text"><span class="cost">₹15995</span><br>
+                            incl. of taxes and duties</p>
+                        <a href="#" class="btn  add-cart">ADD TO CART</a>
+                        <a href="#" class="btn added d-none">ADDED</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col" id="product7">
+                    <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/c57523ad-4b0b-423f-ae4d-64748d651622/ambush-dunk-high-shoe.png"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Air Jordan 1 Mid SE</h5>
+                        <p class="card-text"><span class="cost">₹10295</span><br>
+                            incl. of taxes and duties</p>
+                        <a href="#" class="btn  add-cart">ADD TO CART</a>
+                        <a href="#" class="btn added d-none">ADDED</a>
+                    </div>
+                </div>
+                <div class="col " id="product8" >
+                    <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/23ed212b-d963-4973-b95a-6708222aa078/zoom-prevail-road-running-shoe-rjsZxc.png"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Nike Zoom Prevail</h5>
+                        <p class="card-text"><span class="cost">₹9295</span><br>
+                            incl. of taxes and duties</p>
+                        <a href="#" class="btn  add-cart">ADD TO CART</a>
+                        <a href="#" class="btn added d-none">ADDED</a>
+                    </div>
+                </div>
+                <div class="col" id="product9" >
+                    <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/be9d9d8a-76de-4e88-8bf0-70edfe1f66c3/lebron-witness-5-basketball-shoe-Z2HmfK.png"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">LeBron Witness 5</h5>
+                        <p class="card-text"><span class="cost">₹8295</span><br>
+                            incl. of taxes and duties</p>
+                        <a href="#" class="btn  add-cart">ADD TO CART</a>
+                        <a href="#" class="btn added d-none">ADDED</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mt-5">
+            <div id="yourcart">
+                <div class="card mt-4" >
+                    <div class="card-header">
+                        YOUR CART(<span class="cart-t">0</span>)
+                    </div>
+                    <div class="list d-flex align-items-center justify-content-center">
+                    <ul class="list-group list-group-flush cart">
+                        <p class="cart-text">YOUR CART IS EMPTY</p>
+                        <!-- <li class="list-group-item py-0">
+                            <div class="card" >
+                                <div class="card-body">
+                                    <h5 class="card-title"> Nike Blazer Low </h5>
+                                    <h6 class="card-subtitle mb-2 text-muted price">₹ 8,295</h6>
+                                    <p class="card-text qty">QTY:1</p>
+                                    <button type="button" class="btn btn-light decrease">-</button>
+                                    <button type="button" class="btn btn-dark increase">+</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item py-0">
+                            <div class="card" >
+                                <div class="card-body">
+                                    <h5 class="card-title">LeBron Witness 5</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted price">₹ 9,295</h6>
+                                    <p class="card-text qty">QTY:1</p>
+                                    <button type="button" class="btn btn-light decrease">-</button>
+                                    <button type="button" class="btn btn-dark increase">+</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item py-0">
+                            <div class="card" >
+                                <div class="card-body">
+                                    <h5 class="card-title">LeBron Witness 5</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted price">₹ 7,295</h6>
+                                    <p class="card-text qty">QTY:1</p>
+                                    <button type="button" class="btn btn-light decrease">-</button>
+                                    <button type="button" class="btn btn-dark increase">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>  -->
+                        
+                    </ul></div>
+                    <div class="card-footer totalval">TOTAL CART VALUE : ₹xxxxxx</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    </div>
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+          
+            
+            <div class="modal-header">
+              <h4 class="modal-title">YOUR CART</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            
+            <div class="modal-body py-1">
+                <div id="yourcart1">
+                    <div class="card" >
+                        
+                        <ul class="list-group list-group-flush cart">
+                            <li class="list-group-item py-0">
+                                <div class="card" >
+                                    <div class="card-body">
+                                        <h5 class="card-title"> Nike Blazer Low </h5>
+                                        <h6 class="card-subtitle mb-2 text-muted price">₹ 8,295</h6>
+                                        <p class="card-text qty">QTY:1</p>
+                                        <button type="button" class="btn btn-light decrease">-</button>
+                                        <button type="button" class="btn btn-dark increase">+</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item py-0">
+                                <div class="card" >
+                                    <div class="card-body">
+                                        <h5 class="card-title">LeBron Witness 5</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted price">₹ 9,295</h6>
+                                        <p class="card-text qty">QTY:1</p>
+                                        <button type="button" class="btn btn-light decrease">-</button>
+                                        <button type="button" class="btn btn-dark increase">+</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item py-0">
+                                <div class="card" >
+                                    <div class="card-body">
+                                        <h5 class="card-title">LeBron Witness 5</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted price">₹ 7,295</h6>
+                                        <p class="card-text qty">QTY:1</p>
+                                        <button type="button" class="btn btn-light decrease">-</button>
+                                        <button type="button" class="btn btn-dark increase">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li> 
+                            
+                        </ul>
+                    
+            </div>
+        
+            </div>
+            
+           
+            <div class="modal-footer py-1">
+                <div class="card-footer">TOTAL CART VALUE : ₹xxxxxx</div>
+            </div>
+            
+          </div>
+        </div>
+    </div>
+   
+    <script src="main.js"></script>
+   
+</body>
+
+</html>
